@@ -46,3 +46,15 @@ resilience4j.circuitbreaker:
       automaticTransitionFromOpenToHalfOpenEnabled: true
       minimumNumberOfCalls: 20
       eventConsumerBufferSize: 10
+
+  retry:
+    instances:
+      subscriptionMovie:
+        maxAttempts: 3
+        waitDuration: 1000
+        enableExponentialBackoff: true
+        exponentialBackoffMultiplier: 2
+        retryExceptions:
+          - org.springframework.web.client.HttpServerErrorException
+          - java.io.IOExceptionretryExceptions
+          - feign.FeignException$InternalServerError
