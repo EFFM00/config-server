@@ -12,14 +12,14 @@ rabbitmq:
     baseUrl: http://localhost:9411/
 
   application:
-    name: api-sugeridos
+    name: api-catalog
 
   data:
     mongodb:
-      username: usrseriesdb
-      password: pwdseriesdb
-      database: seriesdb
-      port: 27018
+      username: usrcatalogdb
+      password: pwdcatalogdb
+      database: catalogdb
+      port: 27019
       host: localhost
 
   application:

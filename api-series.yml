@@ -22,12 +22,6 @@ spring:
       port: 27018
       host: localhost
 
-  datasource:
-    driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/movie-dev
-    username: root
-    password: Contrasena88+
-
   jpa:
     hibernate.ddl-auto: update
     generate-ddl: true
