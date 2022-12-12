@@ -22,10 +22,6 @@ spring:
       port: 27019
       host: localhost
 
-  application:
-    name: api-catalog
-
-
 resilience4j.retry:
   instances:
     retryMusic:
